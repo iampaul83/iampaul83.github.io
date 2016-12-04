@@ -10,9 +10,9 @@ title: Awesome Site Title
 email: your-email@domain.com
 description: >
   Awesome site description here
-logo: "/assets/images/logo.jpg"
+# logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://iampaul83.github.io" # the base hostname & protocol for your site
 paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Your Name'
