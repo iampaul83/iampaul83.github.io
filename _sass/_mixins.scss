@@ -1,0 +1,17 @@
+@mixin max-screen($max-width) {
+  @media only screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin text-body() {
+  color: $color-grey-800;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+
+  @include max-screen($mobile-breakpoint) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

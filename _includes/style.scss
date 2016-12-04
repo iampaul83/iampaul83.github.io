@@ -1,0 +1,89 @@
+// @import "neat/neat";
+
+@import 'config';
+@import 'mixins';
+@import 'global';
+@import 'syntax-highlighting';
+@import 'nav';
+@import 'content';
+
+// body {
+//     padding-top: 65px;
+// }
+//
+// .wrap {
+//     margin: 0 auto;
+// }
+//
+// .container {
+//   @include outer-container;
+//
+//   nav {
+//     @include span-columns(2);
+//     @include media($mobile) {
+//       display: none;
+//     }
+//     padding: 20px;
+//     // margin-right: 30px;
+//     // margin-left: -20px;
+//     a {
+//       color: #fff;
+//       text-decoration: none;
+//     }
+//     ul {
+//       margin: 0;
+//       padding: 0;
+//     }
+//   }
+//
+//   .content {
+//     @include span-columns(10);
+//     @include media($mobile) {
+//       @include span-columns(12);
+//     }
+//     h2 {
+//       border-bottom: 2px solid #f0f0f0;
+//       padding-bottom: 12px;
+//     }
+//   }
+//
+// }
+//
+// .main {
+//     display: -webkit-box;
+//     display: -ms-flexbox;
+//     display: flex;
+//     -webkit-box-align: stretch;
+//     -ms-flex-align: stretch;
+//     align-items: stretch;
+// }
+//
+
+
+
+
+/*
+  header
+*/
+.header {
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+header.fixed {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*
+  footer
+*/
+footer {
+    padding: 25px 0 25px 0;
+    background-color: #f5f5f5;
+}

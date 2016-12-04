@@ -2,4 +2,22 @@
 layout: default
 ---
 
-{{ content }}
+<div class="warp">
+
+    <div class="container main">
+        <nav>
+            <ul>
+                {% for post in site.posts %}
+                  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="content">
+            <article class="post">
+                {{content}}
+            </article>
+        </div>
+    </div>
+
+    {% include footer.html %}
+</div>

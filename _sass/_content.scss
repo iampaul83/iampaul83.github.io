@@ -1,0 +1,54 @@
+/**
+ * Page content
+ */
+.main {
+	display: flex;
+  align-items: stretch;
+
+	h1 {
+		margin-top: 0;
+	}
+
+	.content {
+
+    flex-grow: 1;
+    -webkit-flex-grow: 1;
+    transition: all 0.25s ease;
+    transform: translate(0, 0);
+    will-change: transform;
+    word-break: break-word;
+    min-width: 0;
+    padding-top: 46px;
+    padding-bottom: 60px;
+
+    h2 {
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 12px;
+    }
+
+		ul, ol {
+			margin-left: 40px;
+		}
+	}
+
+  .content {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    hyphens: auto;
+
+  }
+
+  amp-img,
+  amp-youtube,
+  amp-iframe {
+      margin: 1em 0;
+  }
+
+}
