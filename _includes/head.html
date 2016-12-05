@@ -18,10 +18,13 @@
   </script>
 
   <style amp-custom>
-  {% capture include_to_scssify %}
-    {% include style.scss %}
-  {% endcapture %}
-  {{ include_to_scssify | scssify }}
+  {% include style.css %}
+  {% comment %}
+      {% capture include_to_scssify %}
+        {% include style.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+  {% endcomment %}
   </style>
 
 
