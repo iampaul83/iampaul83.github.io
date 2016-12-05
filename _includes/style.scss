@@ -5,7 +5,9 @@
 @import 'global';
 @import 'syntax-highlighting';
 @import 'nav';
+@import "header";
 @import 'content';
+@import 'home';
 
 // body {
 //     padding-top: 65px;
@@ -59,26 +61,6 @@
 // }
 //
 
-
-
-
-/*
-  header
-*/
-.header {
-    box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
-    font-size: 14px;
-    font-weight: 300;
-    background-color: #fff;
-}
-
-header.fixed {
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 
 /*
   footer
