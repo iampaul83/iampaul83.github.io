@@ -11,7 +11,7 @@ layout: default
             <h1 class="blog-title">Recent posts</h1>
 
             {% for post in paginator.posts %}
-                <a class="post-preview-box" href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
+                <a class="post-preview-box" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" itemprop="url">
                     <h3 class="post-title" itemprop="name">{{ post.title }}</h2>
                     <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
                     <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
@@ -21,16 +21,16 @@ layout: default
             <hr>
             <div class="paginator">
                 {% if paginator.next_page %}
-                  <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+                  <a class="newer-posts" href="{{ site.url }}{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
                 {% else %}
                   <a class="newer-posts disabled">&larr; Older posts</a>
                 {% endif %}
                 <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
                 {% if paginator.previous_page %}
                   {% if paginator.page == 2 %}
-                    <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+                    <a class="older-posts" href="{{ site.url }}{{ site.baseurl }}/">Newer posts &rarr;</a>
                   {% else %}
-                    <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+                    <a class="older-posts" href="{{ site.url }}{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
                   {% endif %}
                 {% else %}
                   <a class="older-posts disabled">Newer posts &rarr;</a>
