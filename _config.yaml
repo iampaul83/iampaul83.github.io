@@ -36,3 +36,4 @@ kramdown:
 gems:
   - jekyll-paginate
   - octopress-autoprefixer
+  - jekyll-sitemap
