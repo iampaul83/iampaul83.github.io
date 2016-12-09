@@ -19,4 +19,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
   spec.add_runtime_dependency "octopress-autoprefixer"
+  spec.add_runtime_dependency "jekyll-sitemap"
 end
