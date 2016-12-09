@@ -2,6 +2,22 @@
 <html ⚡ lang="en">
   {% include head.html %}
   <body>
+    <amp-analytics type="googleanalytics" id="analytics1">
+        <script type="application/json">
+          {
+            "vars": {
+              "account": "UA-88737921-1"
+            },
+            "triggers": {
+              "trackPageview": {
+                "on": "visible",
+                "request": "pageview"
+              }
+            }
+          }
+          </script>
+    </amp-analytics>
+
     {% include header.html %}
 
     {{ content }}
