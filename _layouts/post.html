@@ -16,18 +16,15 @@ layout: default
             <article class="post">
                 {{content}}
             </article>
+            <amp-iframe width=600 height=140
+                layout="responsive"
+                sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+                resizable
+                src="https://iampaul83-serve-disqus.github.io/disqus/disqus2.html#{{ page.url }}">
+                <div overflow tabindex=0 role=button aria-label="Read more">more!</div>
+            </amp-iframe>
         </div>
     </div>
-    <div class="container">
-        <amp-iframe width=600 height=140
-            layout="responsive"
-            sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
-            resizable
-            src="https://iampaul83-serve-disqus.github.io/disqus/disqus.html#{{ page.url }}">
-            <div overflow tabindex=0 role=button aria-label="Read more">more!</div>
-        </amp-iframe>
-    </div>
-
 
     {% include footer.html %}
 </div>
