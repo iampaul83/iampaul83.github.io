@@ -1,5 +1,4 @@
 ---
-file_name: "_posts/2016-12-02-deal-with-missing-data.md"
 layout: post
 title:  "Deal with missing data"
 date:   2016-12-3 12:00:00 +0800
