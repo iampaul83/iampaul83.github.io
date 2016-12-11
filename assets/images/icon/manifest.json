@@ -2,7 +2,7 @@
  "name": "iampaul83's blog",
  "short_name": "iampaul83",
  "description": "iampaul83's awesome blog",
- "start_url": ".",
+ "start_url": "/",
  "display": "standalone",
  "background_color": "#0379C4",
  "theme_color": "#0379C4",
