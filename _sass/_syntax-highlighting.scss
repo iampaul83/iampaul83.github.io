@@ -14,9 +14,37 @@ tt{
   // color: #222;
 }
 
-code {
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin: 16px 0;
+  // color: $color-darkgrey;
+  border-left: 4px solid #0379C4;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  background-color: rgba(3, 121, 196, 0.2);
+  padding: 10px;
+  // font-style: italic;
+  > p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+hr {
+  margin: 32px 0;
+  border-color: rgba(3, 121, 196, 0.3);
+}
+
+p code {
   font-size: 13px;
   padding: 2px 5px;
+  background-color: rgba(3, 121, 196, 0.2);
+  border-color: rgba(3, 121, 196, 0.5);
+  border-bottom-style: solid;
+  border-width: thin;
 }
 
 a {

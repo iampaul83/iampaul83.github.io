@@ -77,21 +77,6 @@ a.button {
   text-align: center;
 }
 
-/**
- * Blockquotes
- */
-blockquote {
-  color: $color-darkgrey;
-  border-left: 4px solid $color-lightgrey;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic;
-  > :last-child {
-  	margin-bottom: 0;
-  }
-}
-
 
 ul li,
 ol li {
